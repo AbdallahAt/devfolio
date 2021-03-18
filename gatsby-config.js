@@ -9,7 +9,7 @@ module.exports = {
 
     email: `abdallah.atouani@rwth-aachen.de`,
     // Description that goes under your name in main bio
-    description: `Software Engineer, CS Master Student`,
+    description: `Software Engineer, CS Master Student @ RWTH Aachen University`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
@@ -17,7 +17,8 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Hey 👋🏼, my name is Abdallah and I´m a passionate software engineer. I am currently pursuing a masters degree 
+    in computer science at the RWTH University in Aachen, Germany.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
