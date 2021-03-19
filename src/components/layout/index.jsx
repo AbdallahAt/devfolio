@@ -1,5 +1,4 @@
 import React from 'react';
-import { Plus } from 'react-feather';
 
 const classes = {
   wrapper: 'p-8 relative max-w-screen-xl xs:p-24',
@@ -13,9 +12,9 @@ const Layout = ({ children }) => {
       <svg
         className={classes.svg}
         width="404"
-        height="784"
+        height="100%"
         fill="none"
-        viewBox="0 0 404 784"
+        viewBox="0 0 404 100%"
       >
         <defs>
           <pattern
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
         </defs>
         <rect
           width="404"
-          height="784"
+          height="100%"
           fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
         />
       </svg>
