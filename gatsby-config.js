@@ -75,8 +75,8 @@ module.exports = {
         name: `devfolio`,
         short_name: `devfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`, // This color appears on mobile
         display: `minimal-ui`,
         icon: `src/images/logo_small.png`,
       },
