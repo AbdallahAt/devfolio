@@ -14,6 +14,8 @@ module.exports = {
     // author: `@rfitzio`,
     // Optional: Github account URL
     github: `https://github.com/abdallahat`,
+
+    gitlab: `https://git.rwth-aachen.de/abdallah.atouani`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section

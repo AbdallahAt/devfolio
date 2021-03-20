@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
-import { Mail, Linkedin, GitHub } from 'react-feather';
+import { Mail, Linkedin, GitHub, Gitlab } from 'react-feather';
 
 import profileImg from '../../images/logo.png';
 
@@ -21,8 +21,11 @@ const classes = {
 const Header = ({ metadata = {}, noBlog = false }) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
+  const gitlab = get(metadata, 'gitlab', false);
   const linkedin = get(metadata, 'linkedin', false);
   const email = get(metadata, 'email', false);
+
+  console.log(gitlab);
 
   return (
     <div className={classes.wrapper}>
@@ -51,6 +54,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             <li className={classes.item}>
               <a className={classes.link} href={github}>
                 <GitHub/>
+              </a>
+            </li>
+          )}
+          {gitlab && (
+            <li className={classes.item}>
+              <a className={classes.link} href={gitlab}>
+                <Gitlab/>
               </a>
             </li>
           )}
