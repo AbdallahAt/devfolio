@@ -25,8 +25,6 @@ const Header = ({ metadata = {}, noBlog = false }) => {
   const linkedin = get(metadata, 'linkedin', false);
   const email = get(metadata, 'email', false);
 
-  console.log(gitlab);
-
   return (
     <div className={classes.wrapper}>
       <div className={classes.imageWrapper}>
@@ -52,21 +50,21 @@ const Header = ({ metadata = {}, noBlog = false }) => {
           )}
           {github && (
             <li className={classes.item}>
-              <a className={classes.link} href={github}>
+              <a className={classes.link} href={github} target="_blank" rel="noreferrer noopener">
                 <GitHub/>
               </a>
             </li>
           )}
           {gitlab && (
             <li className={classes.item}>
-              <a className={classes.link} href={gitlab}>
+              <a className={classes.link} href={gitlab} target="_blank" rel="noreferrer noopener">
                 <Gitlab/>
               </a>
             </li>
           )}
           {linkedin && (
             <li className={classes.item}>
-              <a className={classes.link} href={linkedin}>
+              <a className={classes.link} href={linkedin} target="_blank" rel="noreferrer noopener">
                 <Linkedin/>
               </a>
             </li>
