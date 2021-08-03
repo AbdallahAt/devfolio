@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://www.abdallah.at/`,
     // Your Name
     name: 'Abdallah Atouani',
     // Main Site Title
@@ -9,7 +9,7 @@ module.exports = {
 
     email: `abdallah.atouani@rwth-aachen.de`,
     // Description that goes under your name in main bio
-    description: `Software Engineer, CS Master Student @ RWTH Aachen University`,
+    description: `Backend Software Engineer @ Zalando`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
@@ -19,8 +19,26 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section
-    about: `Hey 👋🏼, my name is Abdallah and I´m a passionate software engineer. I am currently pursuing a masters degree 
-    in computer science at the RWTH University in Aachen, Germany.`,
+    about: `Hey 👋🏼, my name is Abdallah and I´m a passionate software engineer. I am currently working as a Software Engineer at Zalando in Germany.
+    Before that, I graduated with an M.Sc. in Computer Science from RWTH Aachen University.`,
+    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    experience: [
+      {
+        name: 'Zalando SE',
+        description: 'Backend Software Engineer // February 2020 - Present',
+        link: 'https://corporate.zalando.com',
+      },
+      {
+        name: 'Trifacta',
+        description: 'Software Engineer Intern // Oct 2019 - Jan 2020',
+        link: 'https://www.trifacta.com/',
+      },
+      {
+        name: 'VEDA GmbH',
+        description: 'Working Student - Software Engineer // Apr 2018 - Apr 2019',
+        link: 'https://www.veda.net/',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
