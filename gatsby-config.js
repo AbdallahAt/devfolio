@@ -7,9 +7,9 @@ module.exports = {
     // Main Site Title
     title: `Abdallah Atouani | Software Engineer`,
 
-    email: `abdallah.atouani@rwth-aachen.de`,
+    email: `hello@abdallah.at`,
     // Description that goes under your name in main bio
-    description: `Backend Software Engineer @ Zalando`,
+    description: `Software Engineer @ Zalando`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
@@ -25,7 +25,7 @@ module.exports = {
     experience: [
       {
         name: 'Zalando SE',
-        description: 'Backend Software Engineer // February 2020 - Present',
+        description: 'Backend Software Engineer // Juli 2021 - Present',
         link: 'https://corporate.zalando.com',
       },
       {
