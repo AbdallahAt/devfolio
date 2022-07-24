@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Section from '../section';
+import SummaryExperience from '../summary-experience';
 import SummaryItem from '../summary-item';
 
 const SectionExperience = ({ experience }) => {
@@ -9,10 +10,11 @@ const SectionExperience = ({ experience }) => {
   return (
     <Section title="Experience">
       {experience.map((item) => (
-        <SummaryItem
-          key={item.name}
-          name={item.name}
-          description={item.description}
+        <SummaryExperience
+          company={item.company}
+          position={item.position}
+          time={item.time}
+          location={item.location}
           link={item.link}
         />
       ))}

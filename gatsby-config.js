@@ -24,21 +24,34 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Zalando SE',
-        description: 'Backend Software Engineer // Juli 2021 - Present',
+        company: 'Zalando SE',
+        position: 'Software Engineer',
+        time: 'Juli 2021 - Present',
+        location: 'Germany',
         link: 'https://corporate.zalando.com',
       },
       {
-        name: 'Trifacta',
-        description: 'Software Engineer Intern // Oct 2019 - Jan 2020',
+        company: 'Trifacta',
+        position: 'Software Engineer Intern',
+        time: 'Oct 2019 - Jan 2020',
+        location: 'Berlin, Germany',
         link: 'https://www.trifacta.com/',
       },
       {
-        name: 'VEDA GmbH',
-        description: 'Working Student - Software Engineer // Apr 2018 - Apr 2019',
+        company: 'VEDA GmbH',
+        position: 'Working Student - Software Engineer',
+        time: 'Apr 2018 - Apr 2019',
+        location: 'Aachen, Germany',
         link: 'https://www.veda.net/',
       },
     ],
+    publications: [
+      {
+        name: 'Artifact and reference models for generative machine learning frameworks and build systems',
+        description: 'Proceedings of the 20th ACM SIGPLAN International Conference on Generative Programming: Concepts and Experiences · 1. Okt. 2021',
+        link: 'https://doi.org/10.1145/3486609.3487199'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -82,7 +95,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
