@@ -104,12 +104,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
+        name: `Abdallah Atouani`,
+        short_name: `abdallah.at`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`, // This color appears on mobile
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/logo_small.png`,
       },
     },
