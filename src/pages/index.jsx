@@ -24,7 +24,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
+      <Header metadata={data.site.siteMetadata} image={data.file.childImageSharp.fluid} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
       {!noBlog && <SectionBlog posts={posts} />}
@@ -92,6 +92,14 @@ export const pageQuery = graphql`
             title
             description
           }
+        }
+      }
+    }
+    file(extension: {eq: "png"}, name: {eq: "logo"}) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

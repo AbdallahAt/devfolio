@@ -1,9 +1,8 @@
 import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
+import Img from 'gatsby-image';
 import { Mail, Linkedin, GitHub, Gitlab } from 'react-feather';
-
-import profileImg from '../../images/logo.png';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -18,7 +17,7 @@ const classes = {
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
 };
 
-const Header = ({ metadata = {}, noBlog = false }) => {
+const Header = ({ metadata = {}, image, noBlog = false }) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const gitlab = get(metadata, 'gitlab', false);
@@ -29,7 +28,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
     <div className={classes.wrapper}>
       <div className={classes.imageWrapper}>
         <Link to="/">
-          <img className={classes.image} src={profileImg} alt={metadata.name} />
+          <Img className={classes.image} fluid={image} />
         </Link>
       </div>
       <div className={classes.contentWrapper}>
