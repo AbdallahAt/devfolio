@@ -1,14 +1,17 @@
 import React from 'react';
+import Animation from '../animation';
 
 import Section from '../section';
 
 const SectionAbout = ({ about }) => {
   return (
-    <Section title="About Me">
-      <div className="mb-6">
-        <p>{about}</p>
-      </div>
-    </Section>
+    <Animation delay={1000}>
+      <Section title="About Me">
+        <div className="mb-6">
+          <p>{about}</p>
+        </div>
+      </Section>
+    </Animation>
   );
 };
 
