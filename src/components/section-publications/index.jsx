@@ -8,7 +8,7 @@ const SectionPublications = ({ publications }) => {
   if (!publications.length) return null;
 
   return (
-    <Animation delay={1400}>
+    <Animation delay={1600}>
       <Section title="Publications">
         {publications.map((publication) => (
           <SummaryItem

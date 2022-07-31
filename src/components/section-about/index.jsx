@@ -5,7 +5,7 @@ import Section from '../section';
 
 const SectionAbout = ({ about }) => {
   return (
-    <Animation delay={1000}>
+    <Animation delay={1200}>
       <Section title="About Me">
         <div className="mb-6">
           <p>{about}</p>

@@ -38,7 +38,6 @@ const Header = ({ metadata = {}, image }) => {
             <Link to="/">{metadata.name}</Link>
           </h1>
           <p className={classes.description}>{metadata.description}</p>
-          <Animation type='fadeLeft' delay={600}>
           <ul className={classes.list}>
             {twitter && (
               <li className={classes.item}>
@@ -52,35 +51,42 @@ const Header = ({ metadata = {}, image }) => {
             )}
             {github && (
               <li className={classes.item}>
-                <a className={classes.link} href={github} target="_blank" rel="noreferrer noopener">
-                  <GitHub/>
-                </a>
-              </li>
+                  <a className={classes.link} href={github} target="_blank" rel="noreferrer noopener">
+                    <Animation type='fadeLeft' delay={600}>
+                      <GitHub/>
+                    </Animation>
+                  </a>
+                </li>
             )}
             {gitlab && (
               <li className={classes.item}>
                 <a className={classes.link} href={gitlab} target="_blank" rel="noreferrer noopener">
-                  <Gitlab/>
+                  <Animation type='fadeLeft' delay={700}>
+                    <Gitlab/>
+                  </Animation>
                 </a>
               </li>
+
             )}
             {linkedin && (
               <li className={classes.item}>
                 <a className={classes.link} href={linkedin} target="_blank" rel="noreferrer noopener">
-                  <Linkedin/>
+                  <Animation type='fadeLeft' delay={800}>
+                    <Linkedin/>
+                  </Animation>
                 </a>
               </li>
             )}
             {email && (
               <li className={classes.item}>
                 <a className={classes.link} href={`mailto:${email}`}>
-                <Mail/>
+                  <Animation type='fadeLeft' delay={900}>
+                    <Mail/>
+                  </Animation>
                 </a>
-
               </li>
             )}
           </ul>
-          </Animation>
         </div>
       </div>
     </Animation>
