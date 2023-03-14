@@ -91,7 +91,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    file(extension: {eq: "png"}, name: {eq: "logo"}) {
+    file(extension: {eq: "png"}, name: {eq: "icon"}) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid {
