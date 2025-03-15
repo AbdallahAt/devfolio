@@ -9,7 +9,7 @@ module.exports = {
 
     email: `hello@abdallah.at`,
     // Description that goes under your name in main bio
-    description: `Software Engineer @ Zalando`,
+    description: `Senior Software Engineer @ Zalando`,
     // Optional: Twitter account handle
     // author: `@rfitzio`,
     // Optional: Github account URL
@@ -19,13 +19,18 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section
-    about: `Hey 👋🏼, my name is Abdallah and I´m a passionate software engineer. I am currently working as a Software Engineer at Zalando in Germany.
-    Before that, I graduated with an M.Sc. in Computer Science from RWTH Aachen University.`,
+    about: `Hey 👋🏼, I'm __Abdallah__, a Senior Software Engineer with a strong passion for building scalable, high-performance systems that drive real business impact.
+
+Currently, I work at Zalando, where I design and develop robust software solutions that enhance efficiency, scalability, and innovation. My background includes an M.Sc. in Computer Science from RWTH Aachen University, and over the years, I've honed my expertise in backend engineering, and cloud technologies.
+
+Beyond the technical side, I'm deeply interested in how software can create tangible business value. I enjoy bridging the gap between engineering and strategy—translating complex technical challenges into scalable solutions that align with business goals. Whether it's optimizing system performance, improving operational efficiency, or driving digital transformation, I thrive at the intersection of technology and business.
+
+Let's connect and build something impactful! 🚀`,
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         company: 'Zalando SE',
-        position: 'Software Engineer',
+        position: 'Senior Software Engineer',
         time: 'Juli 2021 - Present',
         location: 'Germany',
         link: 'https://corporate.zalando.com',
