@@ -19,7 +19,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section
-    about: `Hey 👋🏼, I'm __Abdallah__, a Senior Software Engineer with a strong passion for building scalable, high-performance systems that drive real business impact.
+    about: `Hey 👋🏼, I'm Abdallah, a Senior Software Engineer with a strong passion for building scalable, high-performance systems that drive real business impact.
 
 Currently, I work at Zalando, where I design and develop robust software solutions that enhance efficiency, scalability, and innovation. My background includes an M.Sc. in Computer Science from RWTH Aachen University, and over the years, I've honed my expertise in backend engineering, and cloud technologies.
 
