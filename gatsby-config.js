@@ -5,7 +5,7 @@ module.exports = {
     // Your Name
     name: 'Abdallah Atouani',
     // Main Site Title
-    title: `Abdallah Atouani | Software Engineer`,
+    title: `Abdallah Atouani | Senior Software Engineer`,
 
     email: `hello@abdallah.at`,
     // Description that goes under your name in main bio
@@ -19,13 +19,9 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/abdallahat/`,
     // Content of the About Me section
-    about: `Hey 👋🏼, I'm Abdallah, a Senior Software Engineer with a strong passion for building scalable, high-performance systems that drive real business impact.
+    about: `Hey 👋🏼, I’m Abdallah, a Senior Software Engineer passionate about building scalable systems that drive business impact. I work in the Transport & Logistics department at Zalando, designing high-performance software solutions to optimize operations. With an M.Sc. in Computer Science from RWTH Aachen, I focus on backend engineering, distributed systems, and cloud technologies—bridging tech and business goals. \n
 
-Currently, I work at Zalando, where I design and develop robust software solutions that enhance efficiency, scalability, and innovation. My background includes an M.Sc. in Computer Science from RWTH Aachen University, and over the years, I've honed my expertise in backend engineering, and cloud technologies.
-
-Beyond the technical side, I'm deeply interested in how software can create tangible business value. I enjoy bridging the gap between engineering and strategy—translating complex technical challenges into scalable solutions that align with business goals. Whether it's optimizing system performance, improving operational efficiency, or driving digital transformation, I thrive at the intersection of technology and business.
-
-Let's connect and build something impactful! 🚀`,
+Let’s connect and build something impactful! 🚀`,
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
