@@ -59,27 +59,27 @@ export default function Contact() {
             </label>
             <textarea
               name="message"
-              placeholder="Tell me about your project, timeline, and budget..."
+              placeholder="Tell me about your project..."
               rows="6"
               required
               className="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-outline-variant dark:border-outline-variant-dark text-on-surface dark:text-on-surface-dark placeholder-on-surface-variant/50 dark:placeholder-on-surface-variant-dark/50 focus:border-primary dark:focus:border-primary-90 focus:outline-none transition-colors text-lg resize-none"
             ></textarea>
           </div>
 
-          {/* Submit Button */}
-          <div className="pt-4">
+          {/* Submit Button and Response Time */}
+          <div className="pt-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            {/* Response Time Note */}
+            <p className="text-sm text-on-surface-variant dark:text-on-surface-variant-dark">
+              Typical response time is within 24 hours. Looking forward to hearing from you!
+            </p>
+
             <button
               type="submit"
-              className="w-full md:w-auto px-12 py-4 bg-primary text-on-primary rounded-full font-semibold text-lg shadow-lg hover:shadow-xl active:scale-95 transition-all"
+              className="px-12 py-4 bg-primary text-on-primary rounded-full font-semibold text-lg shadow-lg hover:shadow-xl active:scale-95 transition-all"
             >
-              Send Inquiry
+              Send Message
             </button>
           </div>
-
-          {/* Response Time Note */}
-          <p className="text-sm text-on-surface-variant dark:text-on-surface-variant-dark text-center">
-            Typical response time is within 24 hours. Looking forward to hearing from you!
-          </p>
         </form>
       </div>
     </section>
