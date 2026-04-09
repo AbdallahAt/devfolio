@@ -1,4 +1,18 @@
+import { useEffect } from 'react';
+
 export default function Success() {
+  useEffect(() => {
+    // Apply dark mode from localStorage on mount
+    const theme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (theme === 'dark' || (!theme && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-neutral-99 dark:bg-background-dark px-6">
       <div className="max-w-2xl text-center">
