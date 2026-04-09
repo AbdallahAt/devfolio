@@ -1,23 +1,4 @@
 export default function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        window.location.href = '/success';
-      })
-      .catch((error) => {
-        alert('Error submitting form. Please try again.');
-        console.error(error);
-      });
-  };
-
   return (
     <section
       id="contact"
@@ -38,9 +19,9 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          onSubmit={handleSubmit}
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          action="/success"
+          netlify
+          netlify-honeypot="bot-field"
           className="space-y-8"
         >
           {/* Hidden fields for Netlify */}
