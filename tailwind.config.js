@@ -1,16 +1,176 @@
-module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        // Material Design 3 Color System - Emerald Primary
+        primary: {
+          DEFAULT: '#00875A',
+          10: '#001F12',
+          20: '#003823',
+          30: '#005234',
+          40: '#006D46',
+          50: '#00875A',
+          60: '#00A36E',
+          70: '#28BF84',
+          80: '#4BDB9D',
+          90: '#69F8B8',
+          95: '#B7FCD9',
+          99: '#F3FFF7',
+        },
+        secondary: {
+          DEFAULT: '#4C6358',
+          10: '#0A1F15',
+          20: '#1F3429',
+          30: '#354A3E',
+          40: '#4C6358',
+          50: '#657C6F',
+          60: '#7E9688',
+          70: '#98B1A2',
+          80: '#B3CCBC',
+          90: '#CFE8D7',
+          95: '#DDF6E5',
+          99: '#F3FFF7',
+        },
+        tertiary: {
+          DEFAULT: '#3D6373',
+          10: '#001F28',
+          20: '#1A3440',
+          30: '#2F4A58',
+          40: '#3D6373',
+          50: '#577C8D',
+          60: '#7196A7',
+          70: '#8BB1C2',
+          80: '#A6CCDE',
+          90: '#C1E8FB',
+          95: '#DBF2FF',
+          99: '#FAFCFF',
+        },
+        error: {
+          DEFAULT: '#BA1A1A',
+          10: '#410002',
+          20: '#690005',
+          30: '#93000A',
+          40: '#BA1A1A',
+          50: '#DE3730',
+          60: '#FF5449',
+          70: '#FF897D',
+          80: '#FFB4AB',
+          90: '#FFDAD6',
+          95: '#FFEDEA',
+          99: '#FFFBFF',
+        },
+        neutral: {
+          DEFAULT: '#5A6165',
+          10: '#191C1D',
+          20: '#2E3132',
+          30: '#444748',
+          40: '#5C5F60',
+          50: '#757779',
+          60: '#8F9192',
+          70: '#A9ABAC',
+          80: '#C5C7C7',
+          90: '#E1E3E3',
+          95: '#EFF1F1',
+          99: '#FAFDFB',
+        },
+        'neutral-variant': {
+          DEFAULT: '#5B6460',
+          10: '#181D1A',
+          20: '#2D322F',
+          30: '#434845',
+          40: '#5B6460',
+          50: '#737D78',
+          60: '#8D9791',
+          70: '#A7B1AC',
+          80: '#C3CDC7',
+          90: '#DFE9E3',
+          95: '#EDF7F1',
+          99: '#F8FFF8',
+        },
+        // Semantic color tokens
+        background: {
+          DEFAULT: '#FAFDFB',
+          dark: '#191C1D',
+        },
+        'on-background': {
+          DEFAULT: '#191C1D',
+          dark: '#E1E3E3',
+        },
+        surface: {
+          DEFAULT: '#FAFDFB',
+          dark: '#191C1D',
+        },
+        'surface-container-lowest': {
+          DEFAULT: '#FFFFFF',
+          dark: '#0E1211',
+        },
+        'surface-container-low': {
+          DEFAULT: '#F4F6F5',
+          dark: '#1F2120',
+        },
+        'surface-container': {
+          DEFAULT: '#EEF0EF',
+          dark: '#23252A',
+        },
+        'surface-container-high': {
+          DEFAULT: '#E8EBE9',
+          dark: '#2E3031',
+        },
+        'surface-container-highest': {
+          DEFAULT: '#E3E5E4',
+          dark: '#393B3C',
+        },
+        'on-surface': {
+          DEFAULT: '#191C1D',
+          dark: '#E1E3E3',
+        },
+        'on-surface-variant': {
+          DEFAULT: '#434845',
+          dark: '#C3CDC7',
+        },
+        outline: {
+          DEFAULT: '#737D78',
+          dark: '#8D9791',
+        },
+        'outline-variant': {
+          DEFAULT: '#C3CDC7',
+          dark: '#434845',
+        },
+        'on-primary': {
+          DEFAULT: '#FFFFFF',
+          dark: '#003823',
+        },
+        'primary-container': {
+          DEFAULT: '#69F8B8',
+          dark: '#006D46',
+        },
+        'on-primary-container': {
+          DEFAULT: '#001F12',
+          dark: '#69F8B8',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        headline: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        label: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        DEFAULT: '0.125rem',
+        lg: '0.25rem',
+        xl: '0.5rem',
+        full: '0.75rem',
+      },
       screens: {
         xs: '480px',
       },
     },
   },
-  variants: {},
   plugins: [],
-};
+}
