@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,10 +9,11 @@ import OpenSource from './components/OpenSource'
 import Publications from './components/Publications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Success from './components/Success'
 
-function App() {
+function HomePage() {
   return (
-    <div className="bg-background dark:bg-background-dark text-on-background dark:text-on-background-dark min-h-screen">
+    <>
       <Navigation />
       <main className="pt-12">
         <Hero />
@@ -24,7 +26,20 @@ function App() {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="bg-background dark:bg-background-dark text-on-background dark:text-on-background-dark min-h-screen">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/success" element={<Success />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
