@@ -20,10 +20,16 @@ export default function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
           className="space-y-8"
         >
-          {/* Hidden field for Netlify */}
+          {/* Hidden fields for Netlify */}
           <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don't fill this out: <input name="bot-field" />
+            </label>
+          </p>
 
           {/* The Basics Section */}
           <div>
