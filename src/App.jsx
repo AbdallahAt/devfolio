@@ -15,7 +15,7 @@ function HomePage() {
   return (
     <>
       <Navigation />
-      <main className="pt-12">
+      <main className="pt-20">
         <Hero />
         <About />
         <Services />
