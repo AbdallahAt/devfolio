@@ -10,6 +10,7 @@ import Publications from './components/Publications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Success from './components/Success'
+import ScrollToTop from './components/ScrollToTop'
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }
