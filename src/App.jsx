@@ -3,6 +3,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
+import Kibewerben from './components/Kibewerben'
 import Experience from './components/Experience'
 import TechStack from './components/TechStack'
 import OpenSource from './components/OpenSource'
@@ -20,6 +21,7 @@ function HomePage() {
         <Hero />
         <About />
         <Services />
+        <Kibewerben />
         <Experience />
         <TechStack />
         <OpenSource />
