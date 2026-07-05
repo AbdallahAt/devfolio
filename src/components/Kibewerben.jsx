@@ -28,7 +28,7 @@ export default function Kibewerben() {
                 kibewerben.de
               </h3>
               <p className="text-on-surface-variant dark:text-on-surface-variant-dark mb-6 leading-relaxed max-w-2xl">
-                A SaaS platform that helps childcare facilities in Germany streamline their application and hiring process — reducing administrative overhead and making it easier to find the right staff.
+                A SaaS platform that helps job seekers create professional resumes and 'Anschreiben' with ease in 60 seconds.
               </p>
               <a
                 href="https://kibewerben.de"
